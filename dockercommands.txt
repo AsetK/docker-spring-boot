@@ -1,0 +1,22 @@
+docker:
+-image
+-container
+
+Docker engine - docker
+Docker container - running VM
+Docker image - image of VM
+Dockerfile - image description
+
+
+docker commands:
+
+docker build -f Dockerfile -t image_name . (.dot - current directory)
+docker run -p 8085:8085 image_name
+docker container stop container_name
+
+docker container rm container_name
+docker image rmi image_name
+
+docker images
+docker docker container ls (active containers)
+docker container ls --all  (all containers)
