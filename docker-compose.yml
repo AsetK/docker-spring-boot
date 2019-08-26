@@ -1,0 +1,21 @@
+version: '3'
+services:
+  webapp:
+    container_name: webapp_exp
+    build: .
+    ports:
+      - "8085:8085"
+    links:
+      - postgres
+
+  postgres:
+    container_name: postgres_db_exp
+    image: postgres:11
+    ports:
+      - "5438:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=demo
+      - POSTGRES_DB=springbootexp
+
+
