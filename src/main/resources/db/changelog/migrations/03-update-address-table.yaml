@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: asset_kenezhanov
+      changes:
+        - addColumn:
+            tableName: address
+            columns:
+              - column:
+                  name: postal_code
+                  type: text
+                  constraints:
+                    nullable: true
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: asset_kenezhanov
+      changes:
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: value
+                  value: value_1
+        - insert:
+            tableName: address
+            columns:
+              - column:
+                  name: id
+                  value: 2
+              - column:
+                  name: value
+                  value: value_2
+      rollback:
+        sql: delete from address where id in (1,2)
+
+
+
+
+

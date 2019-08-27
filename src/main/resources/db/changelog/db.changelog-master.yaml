@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/migrations/01-add-address-table.yaml
+  - include:
+      file: db/changelog/migrations/02-fill-address-table.yaml
+  - include:
+      file: db/changelog/migrations/03-update-address-table.yaml
